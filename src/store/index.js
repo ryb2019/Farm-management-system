@@ -1,0 +1,34 @@
+import Vue from "vue"
+import Vuex from 'vuex'
+import mutations from './mutations'
+import actions from './actions'
+import getters from './getters'
+
+Vue.use(Vuex);
+
+const state = {
+    showLoading: null,
+    breadcrumbItems: [],
+    collapse:false,
+    tags:[],
+    cropslist:null,
+    bycropslist:null,
+    EquipmentList:null,
+    
+    SeedLists:null,
+    ToolsLists:null,
+    PesticideLists:null,
+    FertilizerLisets:null,
+    Diseaseid:null,
+    management:null,
+    managementDetails:null,
+    scheduleHistoryList:null,
+    
+};
+
+export default new Vuex.Store({
+    state,
+    mutations,
+    actions,
+    getters
+});
